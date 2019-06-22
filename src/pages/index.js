@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import MainPage from './Main';
+import MainPage from './mainPage';
 
 const IndexPage = () => <MainPage />;
 

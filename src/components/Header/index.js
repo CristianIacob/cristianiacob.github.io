@@ -10,6 +10,9 @@ const Header = ({ siteTitle }) => (
         <Link to="/" className={headerStyles.title}>
           {siteTitle}
         </Link>
+        <Link className={headerStyles.title} to="/page2/">
+          Go to page 2
+        </Link>
       </h1>
     </div>
   </header>

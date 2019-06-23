@@ -7,3 +7,8 @@
   min-width: 300px;
   margin-bottom: 1.45rem;
 }
+
+.backgroundImage {
+  position: relative;
+  min-width: 960px;
+}

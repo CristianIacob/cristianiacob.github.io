@@ -1,14 +1,20 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .image {
-  min-width: 300px;
+  max-width: 300px;
   margin-bottom: 1.45rem;
 }
 
 .backgroundImage {
   position: relative;
   min-width: 960px;
+}
+
+.lastLayer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }

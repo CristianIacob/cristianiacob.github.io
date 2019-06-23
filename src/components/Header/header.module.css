@@ -1,6 +1,7 @@
 .container {
   background: rebeccapurple;
-  margin-bottom: 1.45rem;
+  width: 100%;
+  position: relative;
 }
 
 .content {

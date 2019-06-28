@@ -1,12 +1,5 @@
 .container {
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  margin-bottom: auto;
 }
 
 .wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
 }

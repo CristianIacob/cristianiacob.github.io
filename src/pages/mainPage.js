@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import SEO from '../components/seo';
 import mainPageStyles from './styles/mainPage.module.css';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import rocketImg from '../images/rocket-transparent.png';
 
 class MainPage extends React.Component {
   render() {
@@ -20,7 +21,7 @@ class MainPage extends React.Component {
                 speed={0}
                 factor={3}
                 style={{
-                  backgroundImage: 'url(../images/rocket-transparent.png)',
+                  backgroundImage: `url(${rocketImg})`,
                   backgroundSize: 'cover',
                   backgroundAttachment: 'fixed',
                 }}
@@ -31,11 +32,11 @@ class MainPage extends React.Component {
                 <button onClick={() => this.parallax.scrollTo(1)}>Next</button>
               </ParallaxLayer>
               <ParallaxLayer offset={1} speed={0.5} style={{ backgroundColor: '#805E73' }}>
-                <div>offset 1</div>
+                <span>offset 1</span>
                 <button onClick={() => this.parallax.scrollTo(2)}>Next</button>
               </ParallaxLayer>
               <ParallaxLayer offset={2} speed={0.5} style={{ backgroundColor: '#87BCDE' }}>
-                <div>offset 2</div>
+                <span>offset 2</span>
                 <section className={mainPageStyles.lastLayer}>
                   <button onClick={() => this.parallax.scrollTo(0)}>Back Top</button>
                   <Footer />

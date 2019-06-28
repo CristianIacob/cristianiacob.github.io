@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className={footerStyles.container}>
     <div className={footerStyles.content}>
       <span className={footerStyles.title}>
-        © {new Date().getFullYear()}, Built with{' '}
+        © {new Date().getFullYear()}, Built with
         <a className={footerStyles.defaultLink} href="https://www.gatsbyjs.org">
           Gatsby
         </a>

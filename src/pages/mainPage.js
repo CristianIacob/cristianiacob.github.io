@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import SEO from '../components/seo';
 import mainPageStyles from './styles/mainPage.module.css';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import rocketSVG from '../images/rocket.svg';
 import rocketImg from '../images/rocket-transparent.png';
 
 class MainPage extends React.Component {
@@ -26,7 +27,9 @@ class MainPage extends React.Component {
                   backgroundAttachment: 'fixed',
                 }}
               />
-
+              <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
+                <img src={rocketSVG} style={{ width: '15%', marginLeft: '70%' }} />
+              </ParallaxLayer>
               <ParallaxLayer offset={0} speed={0.5}>
                 <Header />
                 <button onClick={() => this.parallax.scrollTo(1)}>Next</button>

@@ -18,3 +18,14 @@
   height: 100%;
   flex-direction: column;
 }
+
+.offsetElement {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/990140/download.png') 0px 0px no-repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -20px;
+  font-weight: bold;
+  background-size: cover;
+}

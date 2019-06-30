@@ -19,11 +19,11 @@ const Header = ({ siteTitle }) => {
     <header className={headerStyles.container}>
       <div className={headerStyles.content}>
         <h1 style={{ margin: 0 }}>
-          <Link to="/" className={headerStyles.title}>
-            {data.site.siteMetadata.title}
-          </Link>
           <Link className={headerStyles.title} to="/page2/">
-            Page 2
+            Home
+          </Link>
+          <Link to="/mainPage" className={headerStyles.title}>
+            {data.site.siteMetadata.title}
           </Link>
         </h1>
       </div>

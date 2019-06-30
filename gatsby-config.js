@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Starter Portfolio`,
+    title: `Parallax Sandbox`,
     description: `Portfolio for Cristian Iacob`,
     author: `Cristian Iacob`,
   },

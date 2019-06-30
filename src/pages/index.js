@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainPage from './mainPage';
+import MainPage from './page2';
 
 const IndexPage = () => <MainPage />;
 

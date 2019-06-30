@@ -34,11 +34,11 @@ class MainPage extends React.Component {
                 <Header />
                 <button onClick={() => this.parallax.scrollTo(1)}>Next</button>
               </ParallaxLayer>
-              <ParallaxLayer offset={1} speed={0.5} style={{ backgroundColor: '#805E73' }}>
-                <span>offset 1</span>
+              <ParallaxLayer offset={1} speed={0.5} style={{ backgroundColor: '#003459' }}>
+                <span className={mainPageStyles.offsetElement}>Colored Text</span>
                 <button onClick={() => this.parallax.scrollTo(2)}>Next</button>
               </ParallaxLayer>
-              <ParallaxLayer offset={2} speed={0.5} style={{ backgroundColor: '#87BCDE' }}>
+              <ParallaxLayer offset={2} speed={0.5} style={{ backgroundColor: '#007ea7' }}>
                 <span>offset 2</span>
                 <section className={mainPageStyles.lastLayer}>
                   <button onClick={() => this.parallax.scrollTo(0)}>Back Top</button>

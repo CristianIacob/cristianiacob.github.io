@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header className={headerStyles.container}>
       <div className={headerStyles.content}>
-        <h1 style={{ margin: 0 }}>
+        <h1 style={{ margin: 0, display: 'flex' }}>
           <Link className={headerStyles.title} to="/page2/">
             Home
           </Link>

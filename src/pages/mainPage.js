@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import SEO from '../components/seo';
 import mainPageStyles from './styles/mainPage.module.css';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons.cjs';
-import FirstContainer from '../components/FirstContainer';
+import FloatingContainer from '../components/FloatingContainer';
 
 class MainPage extends React.Component {
   render() {
@@ -32,27 +32,40 @@ class MainPage extends React.Component {
                 <Header />
               </ParallaxLayer>
 
-              <ParallaxLayer offset={0.13} speed={-0.35}>
-                <FirstContainer />
+              <ParallaxLayer
+                offset={0.12}
+                speed={-0.35}
+                //style={{ background: 'red' }}
+              >
+                <FloatingContainer title="First Container" />
               </ParallaxLayer>
 
-              <ParallaxLayer offset={1} speed={0.5} style={{ backgroundColor: '#003459' }}>
-                <span className={mainPageStyles.offsetElement}>Colored Text</span>
-                <button onClick={() => this.parallax.scrollTo(2)}>Next</button>
+              <ParallaxLayer
+                offset={1.12}
+                speed={-0.15}
+                //</Parallax>style={{ background: 'blue' }}
+              >
+                <FloatingContainer title="Second Container">
+                  <span className={mainPageStyles.offsetElement}>Colored Text</span>
+                  <button onClick={() => this.parallax.scrollTo(2)}>Next</button>
+                </FloatingContainer>
               </ParallaxLayer>
 
-              <ParallaxLayer offset={1} speed={-0.05} style={{ pointerEvents: 'none' }}>
+              <ParallaxLayer offset={1} speed={1} style={{ pointerEvents: 'none' }}>
                 <button className={mainPageStyles.testContainer} onClick={() => this.parallax.scrollTo(1)}>
                   test container
                 </button>
               </ParallaxLayer>
 
-              <ParallaxLayer offset={2} speed={0.5} style={{ backgroundColor: '#007ea7' }}>
-                <span>offset 2</span>
-                <section className={mainPageStyles.lastLayer}>
+              <ParallaxLayer
+                offset={2}
+                speed={0.5}
+                //style={{ backgroundColor: '#007ea7' }}
+              >
+                <FloatingContainer title="Third Container">
                   <button onClick={() => this.parallax.scrollTo(0)}>Back Top</button>
                   <Footer />
-                </section>
+                </FloatingContainer>
               </ParallaxLayer>
             </Parallax>
           </div>

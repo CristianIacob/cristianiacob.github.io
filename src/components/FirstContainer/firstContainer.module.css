@@ -1,0 +1,15 @@
+.containerWrapper {
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: rgba(11, 96, 194, 0.767);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.title {
+  color: white;
+}

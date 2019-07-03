@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './firstContainer.module.css';
+import styles from './floatingContainer.module.css';
 import globalStyles from '../../styles/globalStyles.module.css';
 
 const FloatingContainer = props => (

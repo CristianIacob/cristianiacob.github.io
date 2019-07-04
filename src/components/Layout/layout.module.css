@@ -4,5 +4,9 @@
   height: 100%;
 }
 
-.wrapper {
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }

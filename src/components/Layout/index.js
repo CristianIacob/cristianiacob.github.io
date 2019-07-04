@@ -14,9 +14,7 @@ import './layout.css';
 const Layout = ({ children }) => {
   return (
     <div className={layoutStyles.wrapper}>
-      <div className={layoutStyles.container}>
-        <main>{children}</main>
-      </div>
+      <main className={layoutStyles.main}>{children}</main>
     </div>
   );
 };
